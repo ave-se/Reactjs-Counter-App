@@ -11,6 +11,7 @@ function App() {
             <button
               className="btn btn-success mx-3"
               onClick={() => setCount(count + 1)}
+              disabled={count === 0}
             >
               Increment
             </button>
@@ -23,6 +24,7 @@ function App() {
             <button
               className="btn btn-secondary mx-3"
               onClick={() => setCount(0)}
+              disabled={count === 0}
             >
               Reset
             </button>
